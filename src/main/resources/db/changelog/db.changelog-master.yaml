@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/ddl/create_sequence.yaml
+  - include:
+      file: db/changelog/ddl/create_super_heroe.yaml
+  - include:
+      file: db/changelog/ddl/create_usuario.yaml
+  - include:
+      file: db/changelog/dml/insert_super_heroe.yaml
+  - include:
+      file: db/changelog/dml/insert_usuario.yaml

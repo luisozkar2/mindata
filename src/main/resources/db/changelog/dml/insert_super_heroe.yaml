@@ -1,0 +1,80 @@
+databaseChangeLog:
+  - changeSet:
+      author: lmedina
+      id: insertar_superheroes_con_secuencia
+      changes:
+        - insert:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: alias
+                  value: Spider-Man
+              - column:
+                  name: powers
+                  value: Agilidad sobrehumana, reflejos, fuerza y habilidades para lanzar telarañas
+              - column:
+                  name: name
+                  value: Peter Parker
+        - insert:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: alias
+                  value: Iron Man
+              - column:
+                  name: powers
+                  value: Tecnología avanzada y armamento
+              - column:
+                  name: name
+                  value: Tony Stark
+        - insert:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: alias
+                  value: Captain America
+              - column:
+                  name: powers
+                  value: Fuerza sobrehumana, agilidad, resistencia y habilidades militares
+              - column:
+                  name: name
+                  value: Steve Rogers
+        - insert:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: alias
+                  value: Thor
+              - column:
+                  name: powers
+                  value: Fuerza sobrehumana, resistencia, capacidad de volar y control del martillo Mjolnir
+              - column:
+                  name: name
+                  value: Thor Odinson
+        - insert:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: alias
+                  value: Hulk
+              - column:
+                  name: powers
+                  value: Fuerza y resistencia sobrehumanas, regeneración y habilidades de lucha
+              - column:
+                  name: name
+                  value: Bruce Banner

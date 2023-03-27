@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      author: lmedina
+      id: insertar_usuario_con_secuencia
+      changes:
+        - insert:
+            tableName: usuario
+            columns:
+              - column:
+                  name: id
+                  valueSequenceNext: hibernate_sequence
+              - column:
+                  name: name
+                  value: luis
+              - column:
+                  name: email
+                  value: luisozkar2@gmail.com
+              - column:
+                  name: password
+                  value: $2a$10$qDq3bqUGqJJtTLaYi8YP0ee1jWAB7H7XY8VKrNXLdM9Ud7UEXF.5e

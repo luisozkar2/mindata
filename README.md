@@ -1,2 +1,1 @@
-# mindata
-challenge
+# challenge

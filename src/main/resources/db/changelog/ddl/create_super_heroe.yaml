@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      author: lmedina
+      id: crear_tabla_superheroe
+      changes:
+        - createTable:
+            tableName: super_heroe
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: powers
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: alias
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
