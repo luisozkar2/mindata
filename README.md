@@ -1,0 +1,2 @@
+# mindata
+challenge
